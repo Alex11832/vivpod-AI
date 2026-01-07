@@ -1,15 +1,91 @@
-﻿<footer class="site-footer">
-  <div class="footer-brand">
-    <p>Vivpod<span>AI Voice Agent That Never Misses a Call</span></p>
-    <a href="mailto:hello@vivpod.com">hello@vivpod.com</a>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>ViVpod</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem;">AI Voice Agent That Never Misses a Call. 24/7 answering service for modern businesses.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/industries/handyman' | relative_url }}">Handyman Services</a></li>
+          <li><a href="{{ '/industries/healthcare' | relative_url }}">Healthcare</a></li>
+          <li><a href="{{ '/industries/legal' | relative_url }}">Legal</a></li>
+          <li><a href="{{ '/industries' | relative_url }}">All Industries</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/about' | relative_url }}">About Us</a></li>
+          <li><a href="{{ '/pricing' | relative_url }}">Pricing</a></li>
+          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/privacy' | relative_url }}">Privacy Policy</a></li>
+          <li><a href="{{ '/terms' | relative_url }}">Terms of Service</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} ViVpod. All rights reserved.</p>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/industries/' | relative_url }}">Industries</a>
-    <a href="{{ '/pricing/' | relative_url }}">Pricing</a>
-    <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
-    <a href="{{ '/terms/' | relative_url }}">Terms</a>
-  </div>
-  <p class="footer-note">© {{ "now" | date: "%Y" }} Vivpod. Made for bold teams who demand 24/7 coverage.</p>
 </footer>
 
+<!-- Demo Modal -->
+<div id="demoModal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close modal">×</button>
+    <h3>Book Your Demo</h3>
+    <p style="color: var(--gray); margin-bottom: var(--spacing-md);">See how ViVpod can transform your business communications.</p>
+    
+    <form id="demoForm">
+      <div class="form-group">
+        <label for="demo-name" class="form-label">Full Name</label>
+        <input type="text" id="demo-name" name="name" class="form-input" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="demo-email" class="form-label">Email</label>
+        <input type="email" id="demo-email" name="email" class="form-input" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="demo-company" class="form-label">Company</label>
+        <input type="text" id="demo-company" name="company" class="form-input" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="demo-phone" class="form-label">Phone (optional)</label>
+        <input type="tel" id="demo-phone" name="phone" class="form-input">
+      </div>
+      
+      <button type="submit" class="btn btn-primary btn-large">Schedule Demo</button>
+    </form>
+  </div>
+</div>
+
+<!-- Sticky Mobile CTA -->
+<div class="sticky-cta">
+  <a href="#" class="btn btn-primary" data-modal="demo">Get a Demo</a>
+</div>
+
+<!-- JavaScript -->
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

@@ -1,18 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <main>
     {{ content }}
-    {% include footer.html %}
-    {% include modal.html %}
-    <div class="sticky-cta" role="toolbar">
-      <span>Chat with AI dispatch</span>
-      <button class="btn btn-primary" data-modal-target="demo-modal">Book a demo</button>
-    </div>
-    <div class="site-overlay" data-overlay></div>
-  </body>
+  </main>
+  
+  {% include footer.html %}
+</body>
 </html>
-
