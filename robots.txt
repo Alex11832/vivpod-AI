@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vivpod.com/sitemap.xml

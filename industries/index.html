@@ -1,0 +1,35 @@
+---
+layout: page
+title: Industries
+meta_description: Vivpod answers for handyman, healthcare, legal, retail, and more with industry-specific handling.
+---
+<section class="section">
+  <h1>Industries</h1>
+  <p>Vivpod is tuned for the way your industry talks. Every script, workflow, and handoff is tailored.</p>
+  <div class="use-cases">
+    {% for industry in site.industries %}
+      <article class="card">
+        <h3><a href="{{ industry.url | relative_url }}">{{ industry.title }}</a></h3>
+        <p>{{ industry.content | strip_html | truncatewords: 30 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="section">
+  <h2>Partner any team</h2>
+  <p>Retail, pharmacies, clinics, and service businesses lean on Vivpod for coverage when human staff is stretched thin.</p>
+  <div class="feature-grid">
+    <div class="card">
+      <h3>Retail</h3>
+      <p>Inventory, shipping, and returns handled inside a single call flow.</p>
+    </div>
+    <div class="card">
+      <h3>Pharmacies</h3>
+      <p>Prescription pick-up, refill reminders, and medication questions routed securely.</p>
+    </div>
+    <div class="card">
+      <h3>Home services</h3>
+      <p>HVAC, plumbers, and cleaning crews get exact job notes delivered instantly.</p>
+    </div>
+  </div>
+</section>

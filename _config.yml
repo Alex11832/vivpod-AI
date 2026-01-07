@@ -1,0 +1,25 @@
+# Site configuration
+title: Vivpod
+description: AI voice agent that never misses a call for growing businesses.
+url: https://vivpod.com
+baseurl: ""
+permalink: /:path/
+markdown: kramdown
+plugins: [jekyll-feed]
+
+collections:
+  industries:
+    output: true
+    permalink: /industries/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
