@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const overlay = document.querySelector('[data-overlay]');
   const openModal = (id) => {
     const modal = document.getElementById(id);
@@ -26,3 +26,4 @@
     }
   });
 })();
+

@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Handyman
 permalink: /industries/handyman/
@@ -23,3 +23,4 @@ meta_description: Vivpod handles handyman dispatch, booking, and urgent callback
   </div>
   <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Talk to dispatch</a>
 </section>
+

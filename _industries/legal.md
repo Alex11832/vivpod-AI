@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Legal
 permalink: /industries/legal/
@@ -23,3 +23,4 @@ meta_description: Vivpod keeps law firms responsive with secure intake, routing,
   </div>
   <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">See legal workflows</a>
 </section>
+

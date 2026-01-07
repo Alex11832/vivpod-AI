@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Healthcare
 permalink: /industries/healthcare/
@@ -23,3 +23,4 @@ meta_description: Vivpod keeps clinics staffed with secure scheduling, screening
   </div>
   <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Schedule a healthcare demo</a>
 </section>
+

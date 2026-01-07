@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --bg: #f7f8fb;
   --card: #ffffff;
@@ -399,3 +399,4 @@ button, .btn {
   font: inherit;
   background: #fff;
 }
+
